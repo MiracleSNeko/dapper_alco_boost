@@ -1,0 +1,21 @@
+[package]
+name = "meta_gen"
+version = "1.0.0"
+edition = "2021"
+authors = ["Miracle.S.Neko <awpmsnsoft-wgse@msneko.icu>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.28", features = ["full", "parsing", "extra-traits"] }
+quote = "1.0.32"
+proc-macro2 = "1.0.66"
+
+walkdir = "2.3.3"
+serde_json = "1.0.104"
+base64 = "0.21.2"
+anyhow = "1.0.72"
+convert_case = "0.6.0"
+if_chain = "1.0.2"
